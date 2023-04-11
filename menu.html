@@ -1,0 +1,93 @@
+<input type="checkbox" id="nav-toggle" checked="flase">
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h2><img src="assets/img/logoGenesys.png" width="40px" height="40px" alt=""> <span>GENESYS</span></h2>
+    </div>
+    <!--Secciones-del-tablero-->
+
+    <div class="sidebar-menu">
+        <ul>
+            <li>
+                <hr style="color:aliceblue;">
+            </li>
+            <li>
+                <span onclick="loadContendt('getAll');"><a class="active"><span class="las la-bars"></span>
+                        <span>Todo</span>
+                    </a></span>
+            </li>
+
+            <li>
+                <span onclick="$('#ingFab').toggle()"><a class="active"><span class="las la-bars"></span>
+                        <span>Ingeneiros Fabrica</span></a></span>
+                <ul id="ingFab" style="display:none;">
+                    <li>
+                        <a href="">SC</span>
+                            <span>Sergio Cruz</span></a>
+                    </li>
+                    <li>
+                        <a href="">LA</span>
+                            <span>Luis Alvarez</span></a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <span onclick="$('#ingSer').toggle()"><a class="active"><span class="las la-bars"></span>
+                        <span>Ingeneiros Servicios</span></a></span>
+                <ul id="ingSer" style="display:none;">
+                    <li>
+                        <a href="">RR</span>
+                            <span>Ruben Reyes</span></a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+            <li>
+                <span onclick="$('#clientes').toggle()"><a class="active"><span class="las la-bars"></span>
+                        <span>Clientes</span></a></span>
+                <ul id="clientes" style="display:none;">
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Abierto</span></a>
+                    </li>
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Cerrado</span></a>
+                    </li>
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Cancelado</span></a>
+                    </li>
+                </ul>
+            </li>
+          
+            <li>
+                <span onclick="$('#linTec').toggle()"><a class="active"><span class="las la-bars"></span>
+                        <span>Linea tecnica</span></a></span>
+                <ul id="linTec" style="display:none;">
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Outbound</span></a>
+                    </li>
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Inbound</span></a>
+                    </li>
+                    <li>
+                        <a href="" class=""><span class="las la-home"></span>
+                            <input type="checkbox" id="chbox_cancelado" />
+                            <span>Mail</span></a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+    </div>
+</div>
